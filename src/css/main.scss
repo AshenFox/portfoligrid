@@ -1,0 +1,39 @@
+@import "./utils/vars";
+@import "./utils/snippets";
+// libs
+@import "./libs/ekko-lightbox";
+
+#main-header {
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .avatar-img {
+    background-image: url(../img/person1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (max-width: 768px) {
+      min-height: 390px;
+    }
+  }
+}
+
+#main-header {
+  .port-item {
+    flex-grow: 1;
+
+    &:hover {
+      opacity: 0.8;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (min-width: 1199px) {
+  .port-item {
+    padding: 2.2em 0 !important;
+  }
+}
